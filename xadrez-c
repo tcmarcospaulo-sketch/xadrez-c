@@ -1,0 +1,40 @@
+#include <stdio.h>
+
+int main() {
+
+    // ===================== TORRE =====================
+    // Estrutura: FOR
+    // A Torre move-se em linha reta (horizontal ou vertical)
+    // Requisito do exercício: simular 5 casas para a direita
+    printf("=== Movimento da TORRE ===\n");
+    for(int i = 1; i <= 5; i++){
+        printf("Direita\n");
+    }
+
+
+    // ===================== BISPO =====================
+    // Estrutura: WHILE
+    // O bispo move-se na diagonal -> combina duas direções ao mesmo tempo
+    // Requisito: 5 casas na diagonal superior direita
+    printf("\n=== Movimento do BISPO ===\n");
+    int j = 1;
+    while(j <= 5){
+        printf("Cima, Direita\n");
+        j++;
+    }
+
+
+    // ===================== RAINHA =====================
+    // Estrutura: DO-WHILE
+    // A rainha pode mover-se em qualquer direção
+    // Requisito: simular 8 casas para a esquerda
+    printf("\n=== Movimento da RAINHA ===\n");
+    int k = 1;
+    do{
+        printf("Esquerda\n");
+        k++;
+    } while(k <= 8);
+
+
+    return 0;
+}
